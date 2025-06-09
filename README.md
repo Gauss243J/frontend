@@ -20,7 +20,7 @@ A responsive React + TypeScript frontend for filtering and browsing video (and i
    npm install 
 
 2. **Clone & install**
-    Run dev server
+   Run dev server
 
-3. **Open in browser**
-Navigate to http://localhost:3000 (or the port shown by Vite).
+4. **Open in browser**
+   Navigate to http://localhost:3000 (or the port shown by Vite).
