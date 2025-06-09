@@ -14,13 +14,17 @@ A responsive React + TypeScript frontend for filtering and browsing video (and i
 
 ## ➤ Getting Started
 
-1. **Clone & install**  
-   git clone https://github.com/yourusername/image-video-analysis-ui.git
-   cd image-video-analysis-ui
-   npm install 
+1. **Clone**  
+   - git clone https://github.com/Gauss243J/frontend.git
+   - cd frontend
+    
 
-2. **Clone & install**
-   Run dev server
+2. **Install and Run**
+   - npm install
+   - npm run dev --force
+   
 
 4. **Open in browser**
    Navigate to http://localhost:3000 (or the port shown by Vite).
+   
+![image](https://github.com/user-attachments/assets/b5e5c9b9-42c7-4ea6-84d9-f99a70b50431)
