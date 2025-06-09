@@ -1,0 +1,9 @@
+.gridRoot {
+  display: grid;
+  gap: 0.6rem;         
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  width: 100%;
+  padding-left: 1rem;   
+  padding-right: 1rem;
+  box-sizing: border-box;
+}
