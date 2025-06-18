@@ -1,7 +1,8 @@
+/* ────────── Card container ────────── */
 .card {
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 2px 8px #0001;
+  box-shadow: 0 2px 8px #0002;
   padding: 0.75rem;
   display: flex;
   flex-direction: column;
@@ -9,13 +10,119 @@
   transition: box-shadow 0.17s;
 }
 .card:hover {
-  box-shadow: 0 6px 24px #0002;
+  box-shadow: 0 6px 24px #0003;
 }
+
+/* Title */
 .title {
   font-weight: 600;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   margin-top: 0.8rem;
   text-align: center;
 }
 
+/* Meta paragraphs (score, timestamp, objects, text) */
+.meta {
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+  text-wrap: wrap;
+}
 
+/* Dominant colours */
+.colorRow {
+  margin-top: 0.3rem;
+  display: flex;
+  gap: 0.25rem;
+}
+.colorDot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid #888;
+}
+
+/* Card-level buttons */
+.actionsRow {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.6rem;
+}
+.small {
+  font-size: 0.75rem;
+  padding: 0.3rem 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fafafa;
+  cursor: pointer;
+}
+.small:hover {
+  background: #f0f0f0;
+}
+
+/* ────────── Full-screen overlay & modal ────────── */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal {
+  position: relative;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 800px;
+  width: 90%;
+  box-shadow: 0 0 12px #0008;
+}
+
+/* Close (×) button — now always visible */
+.close {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  line-height: 1;
+  color: #000;          /* visible on white modal */
+  background: #ffffffcc;/* semi-opaque circle against dark overlay */
+  border: 1px solid #777;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.close:hover {
+  background: #f2f2f2;
+}
+
+/* Submit-specific layout */
+.tsRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.8rem 0;
+}
+.tsRow input {
+  width: 120px;
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 0.5rem;
+  background: #4287f5;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.submitBtn:hover {
+  background: #2f6fe1;
+}
