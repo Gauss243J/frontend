@@ -27,4 +27,5 @@ A responsive React + TypeScript frontend for filtering and browsing video (and i
 4. **Open in browser**
    Navigate to http://localhost:3000 (or the port shown by Vite).
    
-![image](https://github.com/user-attachments/assets/b5e5c9b9-42c7-4ea6-84d9-f99a70b50431)
+![image](https://github.com/user-attachments/assets/69146ec9-ea3c-475d-9684-dae330b531a5)
+
